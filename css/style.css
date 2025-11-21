@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* General Body Styles */
+body {
+    font-family: 'Inter', sans-serif; /* Assuming Inter is desired, or use a default sans-serif */
+    background-color: #f9fafb; /* bg-gray-50 */
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #ffffff; /* bg-white */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
+}
+
+nav .container {
+    max-width: 1280px; /* max-w-6xl equivalent for container */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem; /* px-4 */
+    padding-right: 1rem; /* px-4 */
+    padding-top: 0.75rem; /* py-3 */
+    padding-bottom: 0.75rem; /* py-3 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .text-green-800 {
+    color: #166534; /* text-green-800 */
+}
+
+nav .hover\:text-green-600:hover {
+    color: #16a34a; /* hover:text-green-600 */
+}
+
+nav .bg-green-700 {
+    background-color: #047857; /* bg-green-700 */
+}
+
+nav .hover\:bg-green-800:hover {
+    background-color: #065f46; /* hover:bg-green-800 */
+}
+
+/* Hero Section */
+.hero-gradient {
+    background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%); /* Light green gradient */
+    color: #1f2937; /* text-gray-900 */
+}
+
+.hero-gradient h1 {
+    font-size: 2.25rem; /* text-4xl */
+    line-height: 2.5rem; /* leading-10 */
+    font-weight: 700; /* font-bold */
+}
+
+@media (min-width: 768px) {
+    .hero-gradient h1 {
+        font-size: 3rem; /* md:text-5xl */
+        line-height: 1; /* md:leading-none */
+    }
+}
+
+.hero-gradient p {
+    font-size: 1.25rem; /* text-xl */
+}
+
+.hero-gradient .bg-white {
+    background-color: #ffffff;
+}
+
+.hero-gradient .text-green-800 {
+    color: #166534;
+}
+
+.hero-gradient .hover\:bg-gray-100:hover {
+    background-color: #f3f4f6;
+}
+
+.hero-gradient .border-white {
+    border-color: #ffffff;
+}
+
+.hero-gradient .hover\:bg-white:hover {
+    background-color: #ffffff;
+}
+
+.hero-gradient .hover\:text-green-800:hover {
+    color: #166534;
+}
+
+/* Section Titles */
+.text-green-800 {
+    color: #166534;
+}
+
+.bg-green-700 {
+    background-color: #047857;
+}
+
+/* Card Hover Effect (for service-card and product cards) */
+.card-hover {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Service Card (Features Section) */
+.service-card {
+    transition: all 0.3s ease-in-out;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.service-card .bg-green-50 {
+    background-color: #f0fdf4; /* bg-green-50 */
+}
+
+/* Tabs for Services Section */
+.active-tab {
+    border-bottom: 2px solid #047857; /* green-700 */
+    color: #047857; /* green-700 */
+}
+
+/* Forms */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+    border-color: #d1d5db; /* border-gray-300 */
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(52, 211, 153, 0.5); /* focus:ring-2 focus:ring-green-600 */
+    border-color: #34d399; /* green-600 */
+}
+
+/* Buttons */
+.bg-green-700 {
+    background-color: #047857;
+}
+
+.hover\:bg-green-800:hover {
+    background-color: #065f46;
+}
+
+.bg-green-600 {
+    background-color: #16a34a;
+}
+
+.hover\:bg-green-700:hover {
+    background-color: #047857;
+}
+
+.bg-gray-100 {
+    background-color: #f3f4f6;
+}
+
+.hover\:bg-gray-200:hover {
+    background-color: #e5e7eb;
+}
+
+/* Modals */
+.modal {
+    background-color: rgba(0, 0, 0, 0.5); /* bg-black bg-opacity-50 */
+}
+
+.modal .bg-white {
+    background-color: #ffffff;
+}
+
+.modal .rounded-lg {
+    border-radius: 0.5rem; /* rounded-lg */
+}
+
+.modal .shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+}
+
+.modal .text-green-800 {
+    color: #166534;
+}
+
+.modal .text-gray-500 {
+    color: #6b7280;
+}
+
+.modal .hover\:text-gray-700:hover {
+    color: #374151;
+}
+
+.modal .bg-blue-600 {
+    background-color: #2563eb;
+}
+
+.modal .hover\:bg-blue-700:hover {
+    background-color: #1d4ed8;
+}
+
+.modal .bg-red-500 {
+    background-color: #ef4444;
+}
+
+.modal .hover\:bg-red-600:hover {
+    background-color: #dc2626;
+}
+
+.modal .text-green-700 {
+    color: #047857;
+}
+
+.modal .hover\:text-green-800:hover {
+    color: #065f46;
+}
+
+/* Star Ratings */
+.text-yellow-500 {
+    color: #f59e0b;
+}
+
+.text-gray-400 {
+    color: #9ca3af;
+}
+
+.hover\:text-yellow-500:hover {
+    color: #f59e0b;
+}
+
+/* Footer */
+footer {
+    background-color: #064e3b; /* bg-green-900 */
+    color: #ffffff;
+}
+
+footer .text-gray-300 {
+    color: #d1d5db;
+}
+
+footer .hover\:text-white:hover {
+    color: #ffffff;
+}
+
+footer .border-gray-700 {
+    border-color: #374151;
+}
+
+footer .text-gray-400 {
+    color: #9ca3af;
+}
+
+footer .hover\:text-green-200:hover {
+    color: #bbf7d0;
+}
+
+footer .bg-green-900 {
+    background-color: #064e3b;
+}

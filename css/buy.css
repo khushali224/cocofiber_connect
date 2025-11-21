@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --primary-brown: #8D6E63;
+  --secondary-brown: #5D4037;
+  --light-brown: #D7CCC8;
+  --text-dark: #212121;
+  --text-light: #FFFFFF;
+  --error-red: #c0392b;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f5f2;
+  margin: 0;
+  padding: 20px;
+  color: var(--text-dark);
+}
+
+h2 {
+  text-align: center;
+  color: var(--primary-brown);
+  margin-bottom: 30px;
+}
+
+.card {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid var(--light-brown);
+}
+
+.card-body {
+  flex: 1;
+  min-width: 300px;
+}
+
+.card-body h3 {
+  color: var(--secondary-brown);
+  margin-bottom: 10px;
+}
+
+.card-body p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+  height: 80px;
+}
+
+button,
+input[type="button"],
+input[type="submit"] {
+  background-color: var(--secondary-brown);
+  color: var(--text-light);
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
+  background-color: var(--secondary-brown);
+}
+
+#upi-field,
+#otp-section {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f1edea;
+  border-left: 4px solid var(--primary-brown);
+}
+.nav-tabs {
+  display: flex;
+  justify-content: center;
+  background-color: #5D4037;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+.nav-tabs a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: #8D6E63;
+  transition: background-color 0.3s ease;
+}
+.nav-tabs a:hover {
+  background-color: #4E342E;
+}
+
