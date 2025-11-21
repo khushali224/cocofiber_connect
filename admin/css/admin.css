@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f6f2; /* light beige background */
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #4e342e; /* deep brown */
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+    background: #fffaf5; /* soft ivory */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+a {
+    text-decoration: none;
+    color: #8B4513; /* saddle brown */
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #5d2c10; /* darker brown */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+table, th, td {
+    border: 1px solid #d2b48c; /* tan border */
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background: #8B4513; /* saddle brown */
+    color: #fffaf5;
+}
+
+td {
+    background: #fffdf9;
+}
+
+button, input[type=submit] {
+    background: #8B4513; /* saddle brown */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover, input[type=submit]:hover {
+    background: #5d2c10; /* darker brown */
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #fffaf5;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+form input, form textarea, form select {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0;
+    border: 1px solid #c49a6c; /* medium brown */
+    border-radius: 5px;
+    background: #fffdf9;
+}
